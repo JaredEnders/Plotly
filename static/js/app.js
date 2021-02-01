@@ -7,7 +7,7 @@ dropDown.on('change', optionChanged);
 function init() {
   // Grab a reference to the dropdown select element
   // Use the list of sample names to populate the select options
-  d3.json("../data/samples.json").then((data) => {
+  d3.json("/samples").then((data) => {
     data.names.foreach (name => {
         d3.select('#selDataset').append('option').attr('value', name).text(name);
     })
