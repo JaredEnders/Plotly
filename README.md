@@ -1,2 +1,2 @@
 # Plotly
-https://bellybutton-biodiversity-app01.herokuapp.com/
+https://belly-button-biodiversity-app1.herokuapp.com/
