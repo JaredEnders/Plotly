@@ -15,7 +15,7 @@ def samples():
     # use json.load() to read in the file as json
     # return json through Flask endpoint
     
-    file - open("static/data/samples.json", encoding='utf-8')
+    file = open("static/data/samples.json", encoding='utf-8')
     data = json.load(file)
     return data
 
