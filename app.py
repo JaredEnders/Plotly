@@ -1,5 +1,4 @@
 import json
-import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -8,15 +7,13 @@ app = Flask(__name__)
 def index():
 
     # use render_template to serve up the index.html
-    return render_template('index.html')
+    return render_template("index.html")
 
 @app.route("/samples")
 def samples():
     # open the json file, located at static/data/samples.json
-    with open('static/data/samples.json') as f:
-    # use json.load() to read in the file as json
-        data = json.load(f)
-    # return that json through the Flask endpoini
+    file - open("static/data/samples.json", encoding='utf-8')
+    data = json.load(file)
     return data
 
 if __name__ == "__main__":
